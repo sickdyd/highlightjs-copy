@@ -66,7 +66,7 @@ class CopyButtonPlugin {
       }
 
       navigator.clipboard
-        .writeText(newText)
+        .writeText(newText.trim())
         .then(function () {
           button.dataset.copied = true;
 
